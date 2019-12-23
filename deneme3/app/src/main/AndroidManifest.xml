@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".LeftBarActivity"/>
+        <activity android:name=".WaterreqActivity"/>
+        <activity android:name=".CaloriesActivity"/>
+        <activity android:name=".Log_outActivity"/>
+        <activity android:name=".ResignActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
