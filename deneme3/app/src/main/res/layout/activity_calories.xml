@@ -153,8 +153,8 @@
         app:layout_constraintHorizontal_bias="0.53"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nutriens"
-        app:layout_constraintVertical_bias="0.063"
-        app:srcCompat="@drawable/download" />
+        app:layout_constraintVertical_bias="0.063"/>
+    //    app:srcCompat="@drawable/download"
 
     <ImageView
         android:id="@+id/imageView4"
