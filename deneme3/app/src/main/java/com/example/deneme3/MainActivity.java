@@ -3,6 +3,7 @@ package com.example.deneme3;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,11 +21,12 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
-    EditText editTextEmail, editTextPassword;
-    Button btn_gonder;
+    private EditText editTextEmail, editTextPassword;
+    private Button btn_gonder;
     FirebaseUser firebaseUser;
-    DatabaseReference reference;
-    FirebaseAuth auth;
+    private DatabaseReference reference;
+    private FirebaseAuth auth;
+
 
 
     @Override
@@ -33,14 +35,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final DatabaseReference email = database.getReference("Email");
-        final DatabaseReference password = database.getReference("Password");
-
         auth = FirebaseAuth.getInstance();
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         editTextEmail = findViewById(R.id.editTextEmail);
         editTextPassword = findViewById(R.id.editTextPassword);
         btn_gonder = findViewById(R.id.login);
+
 
         btn_gonder.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,30 +48,12 @@ public class MainActivity extends AppCompatActivity {
                 String txt_email = editTextEmail.getText().toString();
                 String txt_password = editTextPassword.getText().toString();
 
-                String veri = editTextEmail.getText().toString();
-                String veri2 = editTextPassword.getText().toString();
-
-                email.setValue(veri);
-                password.setValue(veri2);
 
                 if (TextUtils.isEmpty(txt_email) || TextUtils.isEmpty(txt_password)) {
                     Toast.makeText(MainActivity.this, "Tüm Boşlukları Doldurun", Toast.LENGTH_SHORT).show();
                 } else {
-
-                    auth.signInWithEmailAndPassword(txt_email, txt_password)
-                            .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                                @Override
-                                public void onComplete(@NonNull Task<AuthResult> task) {
-                                    if (task.isSuccessful()) {
-                                        Intent intent = new Intent(MainActivity.this, LeftBarActivity.class);
-                                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-                                        startActivity(intent);
-                                        finish();
-                                    } else {
-                                        Toast.makeText(MainActivity.this, "Kullanıcı adı veya Şifre Hatalı!", Toast.LENGTH_SHORT).show();
-                                    }
-                                }
-                            });
+                    Intent intent = new Intent(MainActivity.this, Log_outActivity.class);
+                    startActivity(intent);
                 }
 
             }
