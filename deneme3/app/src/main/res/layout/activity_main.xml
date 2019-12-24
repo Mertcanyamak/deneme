@@ -150,11 +150,13 @@
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="884dp"
+        android:layout_height="325dp"
         app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/logo122_foreground" />
+        app:layout_constraintVertical_bias="0.4"
+        app:srcCompat="@mipmap/logo1221212_foreground" />
 </androidx.constraintlayout.widget.ConstraintLayout>
