@@ -27,6 +27,14 @@
         app:layout_constraintVertical_bias="0.057" />
 
     <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="46dp"
+        android:layout_height="52dp"
+        app:srcCompat="@mipmap/menu"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="54dp" />
+
+    <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="64dp"
         android:layout_height="62dp"

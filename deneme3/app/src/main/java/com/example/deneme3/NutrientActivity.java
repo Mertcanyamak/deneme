@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class NutrientActivity extends AppCompatActivity {
-    private ImageButton bell,back;
+    private ImageButton bell,back,menu;
     private Button cal,nut,gi;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,16 @@ public class NutrientActivity extends AppCompatActivity {
         cal = findViewById(R.id.calories);
         nut = findViewById(R.id.nutriens);
         gi = findViewById(R.id.glycemixindex);
+        menu = findViewById(R.id.imageButton6);
+
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), LeftBarActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         bell.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,14 +46,7 @@ public class NutrientActivity extends AppCompatActivity {
             }
         });
 
-        cal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), CaloriesActivity.class);
-                startActivity(intent);
 
-            }
-        });
 
         nut.setOnClickListener(new View.OnClickListener() {
             @Override
