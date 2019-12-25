@@ -14,6 +14,8 @@
         <activity android:name=".CaloriesActivity"/>
         <activity android:name=".Log_outActivity"/>
         <activity android:name=".ResignActivity"/>
+        <activity android:name=".GlicemikActivity"/>
+        <activity android:name=".NutrientActivity"/>
         <activity android:name=".welcome1Activity"/>
         <activity android:name=".welcomeActivity2"/>
         <activity android:name=".MainActivity">

@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 if (TextUtils.isEmpty(txt_email) || TextUtils.isEmpty(txt_password)) {
                     Toast.makeText(MainActivity.this, "Tüm Boşlukları Doldurun", Toast.LENGTH_SHORT).show();
                 } else {
-                    Intent intent = new Intent(MainActivity.this, welcome1Activity.class);
+                    Intent intent = new Intent(MainActivity.this, NutrientActivity.class);
                     startActivity(intent);
                 }
 
