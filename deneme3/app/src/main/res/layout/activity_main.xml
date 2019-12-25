@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8E9EE0E"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_background">
 
     <EditText
         android:id="@+id/editTextEmail"
@@ -48,6 +48,7 @@
         android:layout_marginStart="21dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="21dp"
+        android:background="#FFDD64"
         android:text="Login"
         android:textAllCaps="false"
         android:textColor="@color/colorAccent"
@@ -103,6 +104,7 @@
         android:id="@+id/forgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
+        android:background="#5BB12222"
         android:text="Forget your password?"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -127,7 +129,7 @@
         android:id="@+id/signUp"
         android:layout_width="wrap_content"
         android:layout_height="28dp"
-        android:backgroundTint="#EDF3F5"
+        android:backgroundTint="#5BB12222"
         android:text="Sign up"
         android:textAlignment="gravity"
         android:textSize="8sp"
