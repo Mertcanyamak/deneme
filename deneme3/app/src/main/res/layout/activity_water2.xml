@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background3">
 
     <ImageView
         android:id="@+id/imageView13"
@@ -19,8 +20,8 @@
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="64dp"
-        android:layout_height="62dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
@@ -36,9 +37,10 @@
         android:layout_width="176dp"
         android:layout_height="143dp"
         android:text="FitLife"
+        android:textAlignment="center"
         android:textAllCaps="false"
         android:textColorLink="#00D33434"
-        android:textSize="40sp"
+        android:textSize="60sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
