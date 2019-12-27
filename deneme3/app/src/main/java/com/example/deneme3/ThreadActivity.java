@@ -17,7 +17,7 @@ package com.example.deneme3;
 
 public class ThreadActivity  extends MainActivity {
     EditText etUrl;
-    Button btClear,btSubmit;
+    Button btClear,btSubmit,save;
     ImageView ivResult;
 
 
@@ -30,6 +30,7 @@ public class ThreadActivity  extends MainActivity {
         btClear = findViewById(R.id.bt_clear);
         btSubmit = findViewById(R.id.bt_submit);
         ivResult = findViewById(R.id.iv_result);
+        save = findViewById(R.id.kaydet);
 
         btClear.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +53,13 @@ public class ThreadActivity  extends MainActivity {
                 }
 
 
+            }
+        });
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Log_outActivity.class);
+                startActivity(intent);
             }
         });
     }

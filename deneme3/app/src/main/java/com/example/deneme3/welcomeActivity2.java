@@ -23,7 +23,7 @@ public class welcomeActivity2 extends AppCompatActivity {
         imageButton11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ThreadActivity.class);
+                Intent intent = new Intent(getApplicationContext(), NutrientActivity.class);
                 startActivity(intent);
             }
         });
@@ -31,7 +31,7 @@ public class welcomeActivity2 extends AppCompatActivity {
         imageButton12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(welcomeActivity2.this, ThreadActivity.class);
+                Intent intent = new Intent(welcomeActivity2.this, NutrientActivity.class);
                 startActivity(intent);
             }
         });

@@ -24,6 +24,15 @@ public class GlicemikActivity extends AppCompatActivity {
         toadd = findViewById(R.id.toaddnew);
         menu = findViewById(R.id.imageButton6);
 
+        toadd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ThreadActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
 
         bell.setOnClickListener(new View.OnClickListener() {
             @Override
