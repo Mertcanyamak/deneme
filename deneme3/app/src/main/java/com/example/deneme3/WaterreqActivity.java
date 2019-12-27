@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class WaterreqActivity extends AppCompatActivity {
 
-   private ImageButton button,button2 ;
+    ImageButton button,button2 ;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -9,28 +9,20 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class GlicemikActivity extends AppCompatActivity {
-    private ImageButton bell,back,menu;
-    private Button cal,nut,gi,toadd;
+     ImageButton bell,back,menu;
+     Button cal,nut,gi,toadd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_glicemik);
 
-        bell = findViewById(R.id.imageButton2);
+        bell = findViewById(R.id.bellnut);
         back = findViewById(R.id.imageButton4);
         cal = findViewById(R.id.calories);
         nut = findViewById(R.id.nutriens);
         gi = findViewById(R.id.glycemixindex);
         toadd = findViewById(R.id.toaddnew);
         menu = findViewById(R.id.imageButton6);
-
-        menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LeftBarActivity.class);
-                startActivity(intent);
-            }
-        });
 
 
         bell.setOnClickListener(new View.OnClickListener() {
@@ -68,18 +60,9 @@ public class GlicemikActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), GlicemikActivity.class);
                 startActivity(intent);
-
-
             }
         });
 
-
-        toadd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
     }
 
 }

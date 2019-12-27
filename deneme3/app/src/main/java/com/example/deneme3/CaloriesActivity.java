@@ -23,13 +23,7 @@ public class CaloriesActivity  extends AppCompatActivity {
         gi = findViewById(R.id.glycemixindex);
         menu = findViewById(R.id.imageButton6);
 
-        menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LeftBarActivity.class);
-                startActivity(intent);
-            }
-        });
+
 
 
 

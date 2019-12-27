@@ -22,10 +22,10 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
     private EditText editTextEmail, editTextPassword;
-    private Button btn_gonder;
+    public Button btn_gonder;
     FirebaseUser firebaseUser;
     private DatabaseReference reference;
-    private FirebaseAuth auth;
+    public FirebaseAuth auth;
 
 
 
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 if (TextUtils.isEmpty(txt_email) || TextUtils.isEmpty(txt_password)) {
                     Toast.makeText(MainActivity.this, "Tüm Boşlukları Doldurun", Toast.LENGTH_SHORT).show();
                 } else {
-                    Intent intent = new Intent(MainActivity.this, welcome1Activity.class);
+                    Intent intent = new Intent(MainActivity.this, ThreadActivity.class);
                     startActivity(intent);
                 }
 
